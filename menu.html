@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Mi primer proyecto</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/menu.css">
+	<link rel="stylesheet" href="css/normalize.min.css">
+</head>
+<body>
+	
+	
+		<header>
+
+			<figure>
+				<a href="#"><img src="img/logo.png" height="160" width="160" alt=""></a>
+			</figure>
+
+			<nav>
+				<ul>
+					<li><a href="#">Opcion1</a></li>
+					<li><a h ref="#">Opcion2</a></li>
+					<li><a href="#">Opcion3</a></li>
+					<li><a href="#">Opcion4</a></li>
+				</ul>
+
+				<figure><a href="#" onclick="activarMenu()"><img src="img/menu.png" height="64" width="64" alt=""></a></figure>
+			</nav>
+				
+		</header>
+
+   <div id="content">
+   por el poder de 
+   </div>
+
+		
+
+	
+
+	<script type="text/javascript" src="js/modernizr.custom.58655.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+	<script>
+
+	activarMen = false;
+
+		function activarMenu(){
+			//Comprobar Menu 
+			////Si esta ocultado -> mostrar
+			if (activarMen ==false) {
+				//mostramos
+				//
+				altura = -210
+			    move = setInterval(function(){
+			    	altura ++;
+			    	if (altura == 0) clearInterval(move);
+
+			    	document.getElementById("content").style.top=altura+"px";
+
+
+			    },1)				
+				activarMen = true;
+			};
+			
+			///si no 
+			else{
+				altura = 0
+			    move = setInterval(function(){
+			    	altura ++;
+			    	if (altura == 210) clearInterval(move);
+
+			    	document.getElementById("content").style.top="-"+altura+"px";
+				activarMen = false;		
+
+		
+			    },1)
+			}
+	</script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Menu fijo en la parte superior</title>
+    <script src="js/jquery.js"></script>
+    <style>
+        * {
+            margin:0px;
+        }
+        header {
+            position:fixed;
+            background-color:#ccc;
+            width:100%;
+            z-index:10;
+            height:80px;
+        }
+        header h1 {
+            margin:0px;
+            padding:5px 20px;
+            overflow:hidden;
+            height:37px;
+        }
+        nav {
+            background-color:#ccc;
+        }
+        nav ul {
+            list-style:none;
+            padding:0px;
+            margin:0px;
+            height:30px;
+            overflow:hidden;
+        }
+        nav ul li {
+            float:left;
+            padding:5px 10px;
+            font-weight:bold;
+        }
+        nav ul li a {
+            text-decoration:none;
+            color:#00f;
+        }
+        content {display:block;}
+        content p {padding:10px 5px;}
+    </style>
+    <script>
+        $(document).ready(function(){
+            
+            // cada vez que se mueva el scroll del navegador se ejecutara
+            // este evento
+            $(document).scroll(function(){
+            
+                // si la posicion del scroll es superior a 55 pixels...
+                if($(window).scrollTop()>45)
+                {
+                    // indicamos que el header tiene una posicion fija a -47 pixels
+                    $("header").css({"position":"fixed", "top":-47});
+                    // definimos el margen superior al contenido cuando queda fijado
+                    $("content").css({"margin-top":80});
+                }else{
+                    $("header").css({"position":"inherit", "top":"inherit"});
+                    $("content").css({"margin-top":0});
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Menu fijo en la parte superior</h1>
+        <nav>
+            <ul>
+                <li><a href="#">menu1</a></li>
+                <li><a href="#">menu2</a></li>
+                <li><a href="#">menu3</a></li>
+                <li><a href="#">menu4</a></li>
+                <li><a href="#">menu5</a></li>
+                <li><a href="#">menu6</a></li>
+            <ul>
+        </nav>
+    </header>
+    
+    <content>
+        <p>contenido de ejemplo1</p>
+        <p>contenido de ejemplo2</p>
+        <p>contenido de ejemplo3</p>
+        <p>contenido de ejemplo4</p>
+        <p>contenido de ejemplo5</p>
+        <p>contenido de ejemplo6</p>
+        <p>contenido de ejemplo7</p>
+        <p>contenido de ejemplo8</p>
+        <p>contenido de ejemplo9</p>
+        <p>contenido de ejemplo10</p>
+        <p>contenido de ejemplo11</p>
+        <p>contenido de ejemplo12</p>
+        <p>contenido de ejemplo13</p>
+        <p>contenido de ejemplo14</p>
+        <p>contenido de ejemplo15</p>
+        <p>contenido de ejemplo16</p>
+        <p>contenido de ejemplo17</p>
+        <p>contenido de ejemplo18</p>
+        <p>contenido de ejemplo19</p>
+        <p>contenido de ejemplo20</p>
+        <p>contenido de ejemplo21</p>
+        <p>contenido de ejemplo22</p>
+        <p>...</p>
+    </content>
+</body>
+</html>

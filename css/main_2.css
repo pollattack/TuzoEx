@@ -1,0 +1,121 @@
+
+.row_6 {
+  padding: 30px 0 72px;
+  background: #fff;
+}
+
+/*------------------isotop items Efecto de reduccion de pantalla------------------*/
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  -ms-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+}
+.isotope {
+  -webkit-transition-property: height, width;
+  -moz-transition-property: height, width;
+  -ms-transition-property: height, width;
+  -o-transition-property: height, width;
+  transition-property: height, width;
+}
+.isotope .isotope-item {
+  overflow: visible;
+  -webkit-transition-property: -webkit-transform, opacity;
+  -moz-transition-property: -moz-transform, opacity;
+  -ms-transition-property: -ms-transform, opacity;
+  -o-transition-property: top, left, opacity;
+  transition-property: transform, opacity;
+}
+/**** disabling Isotope CSS3 transitions ****/
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+  -moz-transition-duration: 0s;
+  -ms-transition-duration: 0s;
+  -o-transition-duration: 0s;
+  transition-duration: 0s;
+}
+/* End: Recommended Isotope styles */
+
+/* disable CSS transitions for containers with infinite scrolling*/
+.isotope.infinite-scrolling {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+.pad_bot3 {
+  padding-bottom: 42px;
+}
+
+.element {
+  width: 270px;
+  height: auto !important;
+  display: block;
+  position: relative;
+  color: #222;
+  border: none;
+  margin: 0 !important;
+  padding: 0 0 38px 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.element > a {
+  margin: 0;
+  display: block;
+  position: relative;
+}
+.element > a figure {
+  position: relative;
+  display: block;
+  margin: 0 0 18px;
+  padding: 0;
+}
+.element > a figure img {
+  width: 100%;
+}
+.element > a span {
+  position: relative;
+  text-transform: uppercase;
+  font-family: 'Georgia', serif;
+  font-size: 12px;
+  line-height: 20px;
+  color: #797979;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+.element span {
+  position: relative;
+  text-transform: uppercase;
+  font-family: 'Georgia', serif;
+  font-size: 12px;
+  line-height: 20px;
+  color: #797979;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+.description {
+  position: relative;
+  display: block;
+}
+
+
+
+
+
+/*----- media queries Cuatro Fotos pantalla grande------*/
+@media (min-width: 1220px) {
+
+  .container {
+    padding: 0;
+  }
+}
+
+/*///oTRO NO SE PORQUE */

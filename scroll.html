@@ -1,0 +1,71 @@
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Untitled Page</title>
+    <script type="text/javascript">
+    //la variable s detecta si hemos dado a la rueda hacia arriba o hacia abajo
+    var s;
+function handle(delta) {
+    if (delta < 0)
+        s = "down";
+    else
+        s = "up";
+    moverDiv();
+}
+ 
+function wheel(event){
+    var delta = 0;
+    if (!event) event = window.event;
+    if (event.wheelDelta) {
+        delta = event.wheelDelta/120; 
+        if (window.opera) delta = -delta;
+    } else if (event.detail) {
+        delta = -event.detail/3;
+    }
+    if (delta)
+        handle(delta);
+}
+function moverDiv()
+{
+    if(s=='down')
+    {
+        var bajar = parseInt(document.getElementById('rojo').style.top);
+        if(isNaN(bajar))
+        bajar=0;
+        var topeAmarillo = parseInt(document.getElementById('amarillo').style.top);
+        if(isNaN(topeAmarillo))
+        topeAmarillo=0;
+        //si el top de rojo es menor que el del amarillo lo bajamos 10px
+        if(bajar < topeAmarillo)
+        document.getElementById('rojo').style.top = bajar + 10;
+        
+    }
+    else
+    {
+        var subir = parseInt(document.getElementById('rojo').style.top);
+        if(isNaN(subir))
+        subir=0;
+        var topePagina=0;
+        //si no está al principio de la página no lo subimos 10px
+        if(subir!=topePagina)
+        document.getElementById('rojo').style.top = subir - 10;
+        
+    }
+}
+ 
+/* Initialization code. */
+if (window.addEventListener)
+    window.addEventListener('DOMMouseScroll', wheel, false);
+    window.onmousewheel = document.onmousewheel = wheel;
+    </script>
+</head>
+<body>
+    <form id="form1" >
+    <div>
+    <div id="amarillo" style="z-index:2;top:180px;background-color:yellow;position:absolute;width:200px;height:100px"></div>
+    <div id="rojo" style="z-index:1;left:60px;background-color:Red;position:absolute;width:100px;height:200px"></div>
+    
+    </div>
+    </form>
+</body>
+</html>
+ 

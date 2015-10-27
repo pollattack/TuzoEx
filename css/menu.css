@@ -1,0 +1,86 @@
+body{
+	font-size: 12px;
+	color: white;
+}
+div#content{
+	background:url(../img/kill.jpg);
+	height: 1000px;
+	margin: 0px;
+	width: 100%;
+
+	position: relative;
+	top: -210px;
+}
+
+header {
+	background-color: #151515;
+	padding: 5px 0px ;
+	text-align: center; 
+	width :100%;
+}
+
+header figure{
+		background: white;
+		display :inline-block;
+		height:40px;
+		margin:0px;
+		padding:2px;
+		border-radius: 5px;
+	}
+figure img{
+	height: 40px;
+				margin :0px;
+}
+header nav figure{
+	padding:  2px;
+	display: inline-block;
+border-radius: 5px;
+position: absolute;
+top :10px;
+right: 10px;
+height: 25px;
+}
+header nav figure img{
+	height: 25px;
+}
+
+header nav ul{
+	margin :0px;
+			padding :0px;
+			display :inline-block;
+}
+header nav ul li{
+	display block ;
+				margin :10px 0px;
+				padding :0px;
+				width:100px;
+				text-align: center;
+}
+header nav ul li a{
+	margin :0px;
+					color :white;
+					font-weight :bolder;
+					text-decoration :none;
+					line-height :5px;
+					line-height: 40px;
+					padding :10px 30px;
+
+}
+
+@media screen and (min-width: 480px){
+	header nav{
+			display :inline-block;
+			float :right;
+			margin-right :2%;
+			}
+
+	header nav figure{
+		display: none;
+	}
+	header nav ul li{
+		display :inline-block;
+					width :20%;
+					margin :0px;
+
+	}
+}

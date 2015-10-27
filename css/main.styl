@@ -1,0 +1,306 @@
+
+gris_oscuro = #88bb00
+color_tuzo= #d98d5a
+naranja = #DD4F24
+azul = #22BCE0
+header_color = #f3d068
+li_color = #44467c
+
+header 
+	background url(../img/6-Wood-Pattern-Background-Thumb01.jpg) 0 0 repeat;
+	height 80px
+	width 100%
+	
+// body
+// 	background white
+.menu 
+	li
+		margin-left .6px
+		margin-right .6px
+		color white
+
+
+.contenid
+	margin-top -20px
+
+footer
+	background li_color
+	color rgba(white,0.5)
+	padding 1em 0
+	text-align center
+	width 100%
+	margin-buttom 0
+	 
+
+	h3
+		font-size 14px
+		font-weight normal
+
+		strong
+			display block 
+
+		.mejor
+			&:before
+			&:after
+				content " - "
+
+.navbar
+	border-radius 0px
+	background-color white
+	border none
+
+.adaptar
+	width 100%
+li 
+	border solid transparent
+	margin-left 10px
+	margin-right 10px
+	background #44467c
+	color gris_oscuro
+	padding-right 20px
+	padding-left 10px
+	//border-right 1px solid white 
+
+
+
+
+
+
+
+
+.li_logo
+	border transparent
+	background none
+	padding-left 0px
+	margin-right 0px
+.li_logo:hover
+	background none
+
+.img_logo
+	position absolute
+	z-index 6
+	margin-top -60px
+	margin-left 0px
+		
+
+.a_logo
+	width 190px
+
+.navbar-inverse
+	.navbar-nav
+		li
+			a
+				padding-top 7px
+				padding-bottom 7px
+				color white
+				font-family: 'Kaushan Script', cursive;
+				
+li:hover
+	background #f59273
+
+
+.logo_central
+	
+	display block
+	margin-right auto
+	margin-left auto
+
+//::::--Lineas de Diseño--:::://
+
+
+.linea2
+	width 100%
+	background #ed6e01
+	height 2px
+	position absolute
+	z-index 1
+	margin-top 78px
+
+
+.navbar
+	.container 
+		background  #44467c
+		width 100%
+		padding-left 0px
+		padding-right 0px
+
+//footer
+.fac
+	img 
+		margin: 15px
+		-webkit-transition: margin 0.5s ease-out
+		-moz-transition: margin 0.5s ease-out
+		-ms-transition: margin 0.5s ease-out
+		transition: margin 0.5s ease-out
+.fac
+ 	.rot:hover 
+		margin-top 2px
+
+.footerview
+	width 100%
+	height 2px
+	background #ed6e01
+.footerview2
+	width 100%
+	height 10px
+	background #ed6e01
+
+///Titulos
+.titulo
+	font-family: 'Kaushan Script', cursive;
+	font-size 36px
+.titulos
+	font-family: 'Kaushan Script', cursive;
+	font-size 32px
+//NOSE
+.quiero
+	font-size 18px
+
+
+
+// inicio de media queries
+@media screen and (max-width: 1200px)
+	header
+		background-color header_color
+		height 80px
+	ul
+		padding-left 100px
+
+	.linea 
+		width 100%
+		height 20px
+		background url(../img/6-Wood-Pattern-Background-Thumb01.jpg) 0 0 repeat;
+	.menu		
+		li
+			background li_color
+			padding-left 13px
+			padding-right 13px
+			margin-right 0px
+			margin-left 0px
+
+			a
+				padding-left 0px
+				padding-right 0px
+	.navbar
+		background li_color
+		.container
+			background li_color
+			width 970px
+			
+	.img_logo
+		width 177px
+		height 118px
+		margin-top -59px
+	.a_logo
+		width 154px
+		margin-left -23px
+	
+		
+
+	
+//Container tablet modificado//    
+
+
+@media screen and (max-width: 992px)
+	header
+		background-color header_color
+		height 150px
+
+
+	.menu
+		li
+			background li_color
+			padding-left 4px
+			padding-right 4px
+		
+			a
+				padding-left 0px
+				padding-right 0px
+    li:hover
+	background #f59273
+		
+		   
+   
+	
+@media screen and (max-width: 768px)
+	// .container
+	// 	background azul
+		
+
+	li
+		background li_color
+
+	.contenid
+		margin-top -20px
+	
+	.container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse {
+ 	margin-right: 0px; 
+	margin-left: 0px; 
+	}
+
+	.tuzo
+		font-size 1.5em
+		font-weight bold
+	
+	.navbar-inverse
+		.navbar-brand
+			color white
+    
+
+
+@media screen and (max-width: 992px)
+
+	.navbar	
+		background li_color	
+		.container
+			width 750px
+			padding-left 0px
+	.menu
+		.li_logo
+			width 
+		li
+			background li_color
+			padding-left 8px
+			padding-right 8px
+	
+    li:hover
+	background #f59273
+
+@media screen and (max-width: 768px)
+
+	.navbar		
+		.container			
+			width 100%
+			padding-left 0px
+	.rot
+		width 44px
+		height 44px
+	
+
+	
+
+	
+		
+
+		
+		
+
+  
+  
+
+
+/* Medium devices (desktops, 992px and up) */
+// @media screen (min-width: 992px)
+	
+// 	.li_logo
+// 		margin-top -83px
+
+
+// /* Small devices (tablets, 768px and up) */
+// @media (min-width: @screen-sm-min) { ... }
+
+// /* Medium devices (desktops, 992px and up) */
+// @media (min-width: @screen-md-min) { ... }
+
+// /* Large devices (large desktops, 1200px and up) */
+// @media (min-width: @screen-lg-min) { ... }
